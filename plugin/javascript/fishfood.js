@@ -23,15 +23,17 @@ function yearsInMilliseconds(numyears)
   return daysInMilliseconds(numyears * 365);
 }
 
+
 function openConfig() {
-	alert('confused.com');
-	
-	$('p.entry').click(function(){
-			$('p.entry').animate({height:"300px"});
-	});
-	$('p.entry').click(function(){
-		$('p.entry').animate({height:"0px"});
-	});
-	$('p.entry').animate({height:"300px"});
-	$('div.config').animate({height:'300px',opacity:'0.4'},"slow");
+    alert('confused.com');
 }
+
+$(document).ready(function () {
+    $("#settings").click(function () {
+        if($('div.config').height() == 0){
+            $('div.config').animate({ height: '300px' }, "slow");
+        }
+        else
+            $('div.config').animate({ height: '0' }, "slow");
+    });
+});

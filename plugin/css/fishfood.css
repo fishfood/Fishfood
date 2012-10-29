@@ -2,6 +2,9 @@ body{
 	width: 270px;
 	height: 540px;
 	background: #191717;
+    font-family: "Trebuchet MS";
+    color: #fff;
+    font-size: 12px;
 }
 
 .fishfood
@@ -13,27 +16,47 @@ body{
 
 .fishfood .settings
 {
-	height: 30px;
+	height: 25px;
 	width: 95%;
-	box-shadow: -1px 0 8px inset;
+	/*box-shadow: -1px 0 8px inset;*/
 	background: #332E2E;
+}
+
+.fishfood .settings h1
+{
+	line-height: 25px;
+    font-size: 12px;
+    width: 180px;
+    float: left;
+    height: 25px;
+    margin: 0 0 0 5px;
 }
 
 .fishfood .settings .setimg
 {
 	height: 25px;
 	width: 25px;
-	background: url(../images/settings.png) no-repeat bottom center;
+	background: url(../images/settings.png) no-repeat center;
 	float: right;
 }
 
 .fishfood .config
 {
-	height: 1px;
+	height: 0px;
 	width: 250px;
 	background: black;
-	box-shadow: -1px 0 8px #fff inset;
+	box-shadow: -1px 1px 8px #170c0c inset;
+    overflow: hidden;
+    color: #fff;
 	z-index: 9999;
+}
+
+.fishfood .config .item
+{
+	font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 5px;
 }
 
 .fishfood h1
@@ -45,8 +68,10 @@ body{
 {
 	width: 95%;
 	height: 25px;
-	border: solid 1px gray;
-	box-shadow: -1px 0 8px;
+	border-top: solid 1px gray;
+    margin: 0;
+    padding-top: 2px;
+	/*box-shadow: -1px 0 5px inset;*/
 }
 
 .fishfood .entry p
@@ -71,5 +96,5 @@ body{
 
 .fishfood .entry .del
 {
-	background: url(../images/delete.png) no-repeat;
+	background: url(../images/delete.png) no-repeat center;
 }
