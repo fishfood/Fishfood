@@ -1,0 +1,74 @@
+body{
+	width: 275px;
+	height: 550px;
+}
+.fishfoods
+{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	background: gray;
+}
+
+.fishfoods .settings
+{
+	height: 30px;
+	width: 95%;
+	box-shadow: -1px 0 8px inset;
+	background: #999999;
+}
+
+.fishfoods .settings .setimg
+{
+	height: 25px;
+	width: 25px;
+	background: url(resource-image://application_x_desktop.png) no-repeat bottom center;
+	float: right;
+}
+
+.fishfoods .config
+{
+	height: 1px;
+	width: 250px;
+	background: black;
+	box-shadow: -1px 0 8px #fff inset;
+	z-index: 9999;
+}
+
+.fishfoods h1
+{
+	font-family: "Trebuchet MS";
+}
+
+.fishfoods .entry
+{
+	width: 95%;
+	height: 25px;
+	border: solid 1px gray;
+	box-shadow: -1px 0 8px;
+}
+
+.fishfoods .entry p
+{
+	color: #D3D3D3;
+	font-family: "Trebuchet MS";
+	margin: 0;
+	height: 35px;
+	line-height: 25px;
+	padding: 0 0 0 10px;
+	width: 90%;
+	float: left;
+}
+
+.fishfoods .entry .del, .edit
+{
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin-left: 2px;
+}
+
+.fishfoods .entry .del
+{
+	background: url(resource-image://delete.png) no-repeat;
+}
