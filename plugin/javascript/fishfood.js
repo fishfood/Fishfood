@@ -28,6 +28,14 @@ function openConfig() {
     alert('confused.com');
 }
 
+function saveConfig() {
+    $('.success').fadeIn('slow');
+    $('div.config').animate({ height: '0' }, "slow");
+    setTimeout(function () {
+        $('.success').fadeOut('slow');
+    }, 1000);
+}
+
 $(document).ready(function () {
     $('body').fireExtensionEvent('requestData');
     CrossriderAPI.bindExtensionEvent(document.body, 'receiveData', function (e, data) {

@@ -20,7 +20,10 @@
 </head>
 <body>
 	<div class="fishfood">
-		<div class="settings" ><h1>Fishfood Configuration</h1><a id="settings" class="setimg" ></a></div> 
+		<div class="settings" ><h1>Fishfood Configuration</h1><a id="settings" class="setimg" ></a></div>
+        <div class="success">
+            Configuration Successfully Saved
+        </div> 
 		    <div id="config" class="config">
                 <div class="fieldset">
                     <p class="item">Research Group: </p><input id="group" type="text" />
@@ -38,7 +41,7 @@
                         <option>Evenings Only</option>
                         <option>Working TIme Only</option>
                     </select>
-                    <div class="button">Save Configuration</div>
+                    <div class="button" onclick="saveConfig()">Save Configuration</div>
                 </div>
             </div> 
 		<div class="entries">

@@ -21,6 +21,21 @@ body{
     border-radius: 3px;
 }
 
+.fishfood .success
+{
+    top: 25%;
+	width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px inset;
+    display: none;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+}
+
 .fishfood .fieldset input, select
 {
 	width: 200px;
