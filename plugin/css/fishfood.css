@@ -14,6 +14,30 @@ body{
 	padding: 10px;
 }
 
+.fishfood .fieldset
+{
+	width: 200px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.fishfood .fieldset input, select
+{
+	width: 200px;
+}
+
+.fishfood .button
+{
+	width: 200px;
+    height: 25px;
+    border-radius: 3px;
+    background: #332E2E;
+    line-height: 25px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+}
+
 .fishfood .settings
 {
 	height: 25px;
