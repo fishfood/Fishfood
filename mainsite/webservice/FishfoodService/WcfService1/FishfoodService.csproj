@@ -7,11 +7,11 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9BDA9C71-3F52-4009-B3A1-42A04E8E594A}</ProjectGuid>
+    <ProjectGuid>{063C0B7D-82E1-40FF-AEDE-81DFB9D680AD}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WcfService1</RootNamespace>
+    <RootNamespace>FishfoodService</RootNamespace>
     <AssemblyName>WcfService1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
@@ -59,25 +59,27 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fishfood.svc" />
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="fishfood.svc.cs">
-      <DependentUpon>fishfood.svc</DependentUpon>
+    <Compile Include="Fishfood.svc.cs">
+      <DependentUpon>Fishfood.svc</DependentUpon>
     </Compile>
-    <Compile Include="Ifishfood.cs" />
+    <Compile Include="IFishfood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <Content Include="Fishfood.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
   <PropertyGroup>
@@ -95,7 +97,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:54742/</IISUrl>
+          <IISUrl>http://localhost:58529/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
